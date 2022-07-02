@@ -946,7 +946,7 @@ client.on("message", async message => {
       });
   }
 
-  if (command === `${prefix}givbdseaway`) {
+  if (command === `${prefix}start-giveaway`) {
     if (!args[0]) return message.channel.send(`You did not specify your time!`);
     if (
       !args[0].endsWith("d") &&
