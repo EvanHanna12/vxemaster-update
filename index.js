@@ -181,7 +181,7 @@ client.on("message", async message => {
   if (command === `${prefix}help`) {
     let helpEmbed = new Discord.MessageEmbed()
       .setTitle("Help Command - Total Commands [30] ")
-      .setDescription(`[Support Server](https://invite.gg/vxemaster)`, `[Invite Me](https://discord.com/api/oauth2/authorize?client_id=708470996767735909&permissions=8&scope=bot)`)
+      .setDescription('')
       .addField(
         "<:VerifiedDeveloper:708105822655217695>》Owner Command [2]:",
         `\`${prefix}eval\`, \`${prefix}add-coins\``,
@@ -557,13 +557,8 @@ client.on("message", async message => {
         true
       )
       .addField("Bot Version", "4.0.0", true)
-      .addField("Library", `discord.js, v${Discord.version}`, true)
-      .addField(
-        "Developer",
-        `${client.users.cache.get("459175543154147328").tag}\n<===>\n${
-          client.users.cache.get("544676649510371328").tag
-        }\n${client.users.cache.get("409859533691813889").tag}`,
-        true
+      .addField("Library", `discord.js, v${Discord.version}`, true),
+        
       )
       .setFooter(
         "Bot by The Team",
@@ -1050,8 +1045,8 @@ client.on("message", async message => {
       return message.channel.send(`You did not describe the bug.`);
     }
     let bugChannel = client.guilds.cache
-      .get("710212452951785533")
-      .channels.cache.get("710214560736608266");
+      .get("992605239448457338")
+      .channels.cache.get("992643323540017222");
     const bugReport = new Discord.MessageEmbed()
       .setTitle(`${message.author.username} found a bug!`)
       .addFields(
@@ -1486,7 +1481,7 @@ client.on("message", async message => {
     }
   }
 
-  if (command === `${prefix}giveaway`) {
+  if (command === `${prefix}giveggggaway`) {
     if (!message.guild) return;
     if (!message.member.hasPermission("ADMINISTRATOR"))
       return message.channel.send(
