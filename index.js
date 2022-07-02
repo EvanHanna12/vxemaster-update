@@ -556,10 +556,8 @@ client.on("message", async message => {
         parseInt(client.users.cache.size).toLocaleString(),
         true
       )
-      .addField("Bot Version", "4.0.0", true)
-      .addField("Library", `discord.js, v${Discord.version}`, true),
-        
-      )
+      .addField("Bot Version", "4.0.0", true)   .addField("Library", `discord.js, v${Discord.version}`, true)
+      
       .setFooter(
         "Bot by The Team",
         message.author.displayAvatarURL({
@@ -891,7 +889,7 @@ client.on("message", async message => {
       .setTitle("Invites")
       .addField(
         "Inviting the Bot",
-        "https://discord.com/api/oauth2/authorize?client_id=708470996767735909&permissions=8&scope=bot"
+        "https://discord.com/api/oauth2/authorize?client_id=992579643129475142&permissions=8&scope=bot"
       )
       .setFooter(`Vxe Master`);
 
